@@ -171,19 +171,17 @@ const Home = () => {
               }}
             >
               <div
-              className=" font-bold cursor-pointer"
-              onClick={() =>
-                document
-                  .getElementById("project")
-                  .scrollIntoView({ behavior: "smooth" })
-              }
-            >
-                      <p className="text-center  ml-[-10px] mt-[6px] lg:mt-[-2px] text- lg:pt-2">
+                className=" font-bold cursor-pointer"
+                onClick={() =>
+                  document
+                    .getElementById("project")
+                    .scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                <p className="text-center  ml-[-10px] mt-[6px] lg:mt-[-2px] text- lg:pt-2">
                   View Projects
                 </p>
-            </div>
-      
-          
+              </div>
             </div>
             <div
               className=" lg:w-40 h-10 w-[155px] bg-cyan-300 hover:bg-cyan-300 transition cursor-pointer ml-3 mt-4 text-black font-bold rounded"
@@ -191,7 +189,7 @@ const Home = () => {
                 boxShadow: "0 0 10px 5px rgba(0, 255, 255, 0.5)", // shadow all sides in cyan
               }}
             >
-              <a href="/Naveen Resume.pdf">
+              <a href="/Naveen Sam Raj Resume.pdf">
                 <p className="text-center pt-2">Download Resume</p>
               </a>
             </div>
