@@ -196,15 +196,15 @@ const Home = () => {
           </div>
           <div className="lg:ml-[890px] lg:mt-[-330px] ml-[80px] mt-[-10px]">
             <div
-              className="lg:w-80 lg:h-80 w-0 h-0 border-3 rounded-full shadow-xl shadow-cyan-500 border-cyan-300 bg-amber-50 ml-50 mt-23"
+              className="w-60 h-60 lg:w-80 lg:h-80 rounded-full border-2 border-cyan-300 shadow-xl"
               style={{
-                boxShadow: "0 0 10px 10px rgba(0, 255, 255, 0.5)", // shadow all sides in cyan
+                boxShadow: "0 0 10px 10px rgba(0, 255, 255, 0.5)",
               }}
             >
               <img
-                src="/images/Naveen.jpg.HEIC"
-                alt=""
-                className="lg:w-80 lg:h-80 rounded-full"
+                src="/images/Naveen.jpg"
+                alt="Naveen Sam Raj"
+                className="w-full h-full rounded-full object-cover"
               />
             </div>
           </div>
