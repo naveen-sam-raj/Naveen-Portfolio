@@ -171,19 +171,17 @@ const Home = () => {
               }}
             >
               <div
-              className=" font-bold cursor-pointer"
-              onClick={() =>
-                document
-                  .getElementById("project")
-                  .scrollIntoView({ behavior: "smooth" })
-              }
-            >
-                      <p className="text-center  ml-[-10px] mt-[6px] lg:mt-[-2px] text- lg:pt-2">
+                className=" font-bold cursor-pointer"
+                onClick={() =>
+                  document
+                    .getElementById("project")
+                    .scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                <p className="text-center  ml-[-10px] mt-[6px] lg:mt-[-2px] text- lg:pt-2">
                   View Projects
                 </p>
-            </div>
-      
-          
+              </div>
             </div>
             <div
               className=" lg:w-40 h-10 w-[155px] bg-cyan-300 hover:bg-cyan-300 transition cursor-pointer ml-3 mt-4 text-black font-bold rounded"
@@ -220,9 +218,9 @@ const Home = () => {
           </div>
           <div className="flex flex-row">
             <div className="ml-[-180px] lg:mt-1 mt-[20px] lg:ml-[-50px]">
-              <div className=" w-80 h-80 lg:w-80 lg:h-80 border-3 rounded-full shadow-lg shadow-cyan-500 border-cyan-300 bg-amber-50 ml-60 mt-8">
+              <div className=" w-60 h-80 lg:w-80 lg:h-80 border-3 rounded-full shadow-lg shadow-cyan-500 border-cyan-300 bg-amber-50 ml-60 mt-8">
                 <img
-                  src="/images/WhatsApp Image 2025-07-26 at 12.30.43_ac782e1b.jpg"
+                  src="/images/Naveen.jpg"
                   alt=""
                   className=" lg:w-80 lg:h-80 w-80 h-80 rounded-full"
                   style={{
