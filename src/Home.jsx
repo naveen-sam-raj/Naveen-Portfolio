@@ -12,7 +12,7 @@ const Home = () => {
         "service_zcx7jv5", // EmailJS service ID
         "template_fca8rm9", // EmailJS template ID
         form.current,
-        "wUsO6V4EJSmz7scT7" // Public key
+        "wUsO6V4EJSmz7scT7", // Public key
       )
       .then(
         (result) => {
@@ -22,7 +22,7 @@ const Home = () => {
         (error) => {
           alert("Failed to send message. Please try again.");
           console.log(error.text);
-        }
+        },
       );
   };
 
@@ -202,7 +202,7 @@ const Home = () => {
               }}
             >
               <img
-                src="/images/WhatsApp Image 2025-07-26 at 12.30.43_ac782e1b.jpg"
+                src="/images/Naveen.jpg.HEIC"
                 alt=""
                 className="lg:w-80 lg:h-80 rounded-full"
               />
