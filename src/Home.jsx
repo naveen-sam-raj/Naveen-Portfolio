@@ -189,22 +189,22 @@ const Home = () => {
                 boxShadow: "0 0 10px 5px rgba(0, 255, 255, 0.5)", // shadow all sides in cyan
               }}
             >
-              <a href="/Naveen Resume.pdf">
+              <a href="/Naveen Sam Raj Resume.pdf">
                 <p className="text-center pt-2">Download Resume</p>
               </a>
             </div>
           </div>
           <div className="lg:ml-[890px] lg:mt-[-330px] ml-[80px] mt-[-10px]">
             <div
-              className="w-60 h-60 lg:w-80 lg:h-80 rounded-full border-2 border-cyan-300 shadow-xl"
+              className="lg:w-80 lg:h-80 w-0 h-0 border-3 rounded-full shadow-xl shadow-cyan-500 border-cyan-300 bg-amber-50 ml-50 mt-23"
               style={{
-                boxShadow: "0 0 10px 10px rgba(0, 255, 255, 0.5)",
+                boxShadow: "0 0 10px 10px rgba(0, 255, 255, 0.5)", // shadow all sides in cyan
               }}
             >
               <img
                 src="/images/Naveen.jpg"
-                alt="Naveen Sam Raj"
-                className="w-full h-full rounded-full object-cover"
+                alt=""
+                className="lg:w-80 lg:h-80 rounded-full"
               />
             </div>
           </div>
@@ -218,7 +218,7 @@ const Home = () => {
           </div>
           <div className="flex flex-row">
             <div className="ml-[-180px] lg:mt-1 mt-[20px] lg:ml-[-50px]">
-              <div className=" w-60 h-80 lg:w-80 lg:h-80 border-3 rounded-full shadow-lg shadow-cyan-500 border-cyan-300 bg-amber-50 ml-60 mt-8">
+              <div className=" w-80 h-80 lg:w-80 lg:h-80 border-3 rounded-full shadow-lg shadow-cyan-500 border-cyan-300 bg-amber-50 ml-60 mt-8">
                 <img
                   src="/images/Naveen.jpg"
                   alt=""
