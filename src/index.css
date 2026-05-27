@@ -1,3 +1,73 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800,900&display=swap');
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#08080f;font-family:'Inter',sans-serif;color:#f1f5f9;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+
+:root{
+  --bg:#08080f;
+  --surface:rgba(255,255,255,0.04);
+  --surface-solid:#0f0f1d;
+  --border:rgba(255,255,255,0.08);
+  --border-accent:rgba(124,92,252,0.25);
+  --accent:#7c5cfc;
+  --accent-dark:#5b3fd4;
+  --accent2:#06b6d4;
+  --accent3:#f59e0b;
+  --text:#f1f5f9;
+  --muted:#94a3b8;
+  --muted2:#64748b;
+  --r:12px;--r2:18px;--r3:24px;--r4:32px;
+  --font:'Inter',sans-serif;
+  --font-display:'Space Grotesk','Cabinet Grotesk','Inter',sans-serif;
+  --glow:0 0 40px rgba(124,92,252,0.25);
+  --glow-lg:0 0 80px rgba(124,92,252,0.3);
+}
+
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--accent);border-radius:99px}
+
+/* Scroll progress bar */
+.scroll-bar{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent2));z-index:9999;transform-origin:left;transform:scaleX(0)}
+
+/* Layout */
+.section{padding:100px 48px}
+.wrap{max-width:1200px;margin:0 auto}
+.sec-head{margin-bottom:56px}
+.center{text-align:center}
+
+/* Section typography */
+.sec-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;color:var(--accent);letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;background:rgba(124,92,252,0.1);padding:6px 14px;border-radius:99px;border:1px solid rgba(124,92,252,0.2)}
+.sec-h{font-family:var(--font-display);font-size:clamp(2rem,4vw,2.9rem);font-weight:700;color:var(--text);letter-spacing:-0.8px;line-height:1.1;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+.sec-h .grad{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.sec-sub{font-size:15px;color:var(--muted);line-height:1.8;margin-top:14px;max-width:520px}
+
+/* Glass card */
+.glass{background:rgba(255,255,255,0.04);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08);border-radius:var(--r2);transition:all .3s}
+.glass:hover{border-color:rgba(124,92,252,0.3);box-shadow:0 8px 40px rgba(124,92,252,0.12)}
+
+/* Buttons */
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;background:linear-gradient(135deg,var(--accent),var(--accent-dark));color:#fff;font-size:14px;font-weight:600;border-radius:var(--r);border:none;font-family:var(--font);cursor:pointer;transition:all .25s;box-shadow:0 4px 20px rgba(124,92,252,0.35)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(124,92,252,0.5)}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;background:transparent;color:var(--text);font-size:14px;font-weight:600;border-radius:var(--r);border:1.5px solid var(--border);font-family:var(--font);cursor:pointer;transition:all .25s}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent);background:rgba(124,92,252,0.08)}
+.btn-sm{padding:9px 20px;font-size:12.5px;border-radius:8px}
+
+/* Scroll to top */
+.scroll-top{position:fixed;bottom:28px;right:28px;width:44px;height:44px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#fff;font-size:16px;z-index:500;box-shadow:0 4px 20px rgba(124,92,252,0.4);transition:all .3s;opacity:0;pointer-events:none}
+.scroll-top.show{opacity:1;pointer-events:all}
+.scroll-top:hover{transform:translateY(-3px)}
+
+/* Animations */
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(0.75)}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes spin-slow{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes glow-pulse{0%,100%{box-shadow:0 0 20px rgba(124,92,252,0.3)}50%{box-shadow:0 0 60px rgba(124,92,252,0.6)}}
+
+/* Responsive */
+@media(max-width:900px){.section{padding:72px 20px}}
+@media(max-width:480px){.section{padding:56px 16px}}
